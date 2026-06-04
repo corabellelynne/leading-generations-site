@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Residential Leads | Leading Generations</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Connect with trusted residential real estate opportunities through Leading Generations.">
+</head>
+<body>
+  <header>
+    <div class="logo">Leading Generations</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="residential.html">Residential</a></li>
+        <li><a href="commercial.html">Commercial</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Residential hero section -->
+  <section class="hero" style="background-image:url('images/residential.jpg');">
+    <div class="hero-content">
+      <h1>Residential Properties</h1>
+      <p>From cosy bungalows to modern condos, explore the homes that suit your lifestyle.</p>
+    </div>
+  </section>
+
+  <section id="features">
+    <h2>Why Buy a Home Through Us?</h2>
+    <div class="features-grid">
+      <div class="feature-item">
+        <h3>Curated Listings</h3>
+        <p>Discover a carefully curated selection of homes with detailed descriptions and stunning photos, ensuring you only see properties that match your needs.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Neighbourhood Insights</h3>
+        <p>We offer local market insights and community highlights so you can make informed decisions about where to live.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Responsive Experience</h3>
+        <p>Browse and inquire from any device with our mobile‑optimised platform.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Residential lead capture form -->
+  <section id="contact">
+    <h2>Request Residential Leads</h2>
+    <form>
+      <label for="res-name">Name</label>
+      <input type="text" id="res-name" name="name" placeholder="Your Name" required>
+      <label for="res-email">Email</label>
+      <input type="email" id="res-email" name="email" placeholder="you@example.com" required>
+      <label for="res-phone">Phone</label>
+      <input type="tel" id="res-phone" name="phone" placeholder="(123) 456‑7890" required>
+      <label for="res-type">Property Type</label>
+      <select id="res-type" name="property_type" required>
+        <option value="">Select type</option>
+        <option value="single family">Single‑Family Home</option>
+        <option value="condo">Condo/Townhouse</option>
+        <option value="apartment">Apartment</option>
+        <option value="other">Other</option>
+      </select>
+      <label for="res-bedrooms">Bedrooms</label>
+      <select id="res-bedrooms" name="bedrooms" required>
+        <option value="">Select number of bedrooms</option>
+        <option value="1">1+</option>
+        <option value="2">2+</option>
+        <option value="3">3+</option>
+        <option value="4">4+</option>
+      </select>
+      <label for="res-budget">Budget Range (USD)</label>
+      <input type="text" id="res-budget" name="budget" placeholder="e.g. 200,000 - 500,000" required>
+      <label for="res-message">Additional Notes</label>
+      <textarea id="res-message" name="message" placeholder="Tell us what you’re looking for"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Leading Generations. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

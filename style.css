@@ -1,0 +1,288 @@
+/*
+ * Styling for Leading Generations lead generation website
+ *
+ * The colour palette and typography were chosen to convey trust and
+ * professionalism while remaining approachable.  A responsive layout
+ * ensures a positive browsing experience on desktops, tablets and
+ * smartphones, consistent with recommendations that real‑estate
+ * websites should feature simple navigation and mobile‑friendly design
+ *【461357022055994†L229-L251】.  Form elements and calls to action are
+ * prominent to encourage lead capture【461357022055994†L302-L323】.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+  --primary-color: #005f73;
+  --secondary-color: #0a9396;
+  --accent-color: #94d2bd;
+  --accent2-color: #ee9b00;
+  --light-color: #f8f9fa;
+  --dark-color: #001219;
+  --text-dark: #333;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-dark);
+  line-height: 1.6;
+  background-color: var(--light-color);
+}
+
+/* Header and navigation */
+header {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero sections */
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.hero .hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 0 1rem;
+}
+
+.hero .hero-content h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero .hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--accent2-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #f4a261;
+}
+
+.btn-secondary {
+  background: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  background: #127372;
+}
+
+/* Features section */
+#features {
+  padding: 4rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+#features h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.feature-item {
+  flex: 1 1 250px;
+  max-width: 300px;
+  padding: 1.5rem;
+  background: var(--light-color);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.feature-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.feature-item p {
+  font-size: 0.95rem;
+  color: var(--text-dark);
+}
+
+/* About section */
+#about {
+  padding: 4rem 2rem;
+  background: var(--secondary-color);
+  color: #fff;
+  text-align: center;
+}
+
+#about h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#about p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+}
+
+/* Contact form */
+#contact {
+  padding: 4rem 2rem;
+  background: #fff;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form label {
+  font-weight: 600;
+}
+
+form input,
+form select,
+form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+form textarea {
+  min-height: 120px;
+}
+
+form button {
+  align-self: flex-start;
+  padding: 0.75rem 1.5rem;
+  background: var(--accent2-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #f4a261;
+}
+
+/* Footer */
+footer {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+/* Responsive behaviour */
+@media (max-width: 768px) {
+  .hero .hero-content h1 {
+    font-size: 2rem;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cta-buttons {
+    flex-direction: column;
+  }
+}

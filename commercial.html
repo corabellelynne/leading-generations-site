@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commercial Leads | Leading Generations</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Find your next office, retail or industrial property through Leading Generations.">
+</head>
+<body>
+  <header>
+    <div class="logo">Leading Generations</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="residential.html">Residential</a></li>
+        <li><a href="commercial.html">Commercial</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Commercial hero section -->
+  <section class="hero" style="background-image:url('images/commercial.jpg');">
+    <div class="hero-content">
+      <h1>Commercial Properties</h1>
+      <p>Find the perfect space for your business—offices, retail storefronts, warehouses and more.</p>
+    </div>
+  </section>
+
+  <section id="features">
+    <h2>Why Work with Us?</h2>
+    <div class="features-grid">
+      <div class="feature-item">
+        <h3>Business‑Ready Listings</h3>
+        <p>Access a hand‑picked list of commercial properties with key specs like square footage and zoning to meet your business needs.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Data‑Driven Insights</h3>
+        <p>We leverage IDX data and analytics to keep listings up to date and to inform your search.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Flexible Search</h3>
+        <p>Whether you’re on your phone or desktop, quickly browse and filter properties with our responsive tools.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commercial lead capture form -->
+  <section id="contact">
+    <h2>Request Commercial Leads</h2>
+    <form>
+      <label for="com-name">Name</label>
+      <input type="text" id="com-name" name="name" placeholder="Your Name" required>
+      <label for="com-email">Email</label>
+      <input type="email" id="com-email" name="email" placeholder="you@example.com" required>
+      <label for="com-phone">Phone</label>
+      <input type="tel" id="com-phone" name="phone" placeholder="(123) 456‑7890" required>
+      <label for="com-type">Business Type</label>
+      <select id="com-type" name="business_type" required>
+        <option value="">Select business type</option>
+        <option value="office">Office</option>
+        <option value="retail">Retail</option>
+        <option value="industrial">Industrial/Warehouse</option>
+        <option value="mixed-use">Mixed‑Use</option>
+      </select>
+      <label for="com-size">Minimum Square Footage</label>
+      <input type="number" id="com-size" name="square_footage" placeholder="e.g. 1000" required>
+      <label for="com-budget">Budget Range (USD)</label>
+      <input type="text" id="com-budget" name="budget" placeholder="e.g. 1,000 - 5,000/mo" required>
+      <label for="com-message">Additional Notes</label>
+      <textarea id="com-message" name="message" placeholder="Describe your ideal space and any requirements"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Leading Generations. All rights reserved.</p>
+  </footer>
+</body>
+</html>
